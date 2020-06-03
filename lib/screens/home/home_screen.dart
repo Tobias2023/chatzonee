@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:chatzonee/screens/chat/chat_screen.dart';
+
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -82,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
           });
         },
         children: <Widget>[
-          Container(),
+          ChatScreen(),
           Container(),
           Container(),
         ],

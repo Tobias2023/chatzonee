@@ -1,3 +1,4 @@
+import 'package:chatzonee/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => Container()
+        '/': (context) => HomeScreen()
       },
     );
   }

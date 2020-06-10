@@ -74,8 +74,15 @@ class ChatScreen extends StatelessWidget {
                 child: ListView.builder(
                   padding: const EdgeInsets.only(bottom: 80),
                   itemBuilder: (context, index) {
-                    print(Data.chatRooms[index].sender.name);
-                    return ChatRoomListItem(chatRoom: Data.chatRooms[index],);
+                    // print(Data.chatRooms[index].sender.name);
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/chatRoom', 
+                          arguments: Data.chatRooms[index]);
+                      },
+                      child: ChatRoomListItem(
+                        chatRoom: Data.chatRooms[index],
+                      ));
                   },
                   itemCount: Data.chatRooms.length,
                 ),

@@ -34,11 +34,11 @@ class _HomeScreenState extends State<HomeScreen> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.message, 
-                color: Colors.amber,
+                color: Colors.grey,
                 ),
               activeIcon: Icon(
                 Icons.message,
-                color: Colors.grey
+                color: Colors.blue
                 ),
               title: Container(
                 height: 0.0,
@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               activeIcon: Icon(
                 Icons.notifications,
-                color: Colors.grey
+                color: Colors.blue
                 ),
               title: Container(
                 height: 0.0,
@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               activeIcon: Icon(
                 Icons.account_circle,
-                color: Colors.grey
+                color: Colors.blue
                 ),
               title: Container(
                 height: 0.0,

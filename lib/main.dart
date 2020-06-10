@@ -1,3 +1,4 @@
+import 'package:chatzonee/screens/chat_room/chat_room_screen.dart';
 import 'package:chatzonee/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => HomeScreen()
+        '/': (context) => HomeScreen(),
+        '/chatRoom': (context) => ChatRoomScreen()
       },
     );
   }
